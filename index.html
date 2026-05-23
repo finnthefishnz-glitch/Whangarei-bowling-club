@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamo Bowling Club</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #14532d, #052e16);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #facc15;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #facc15;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 70px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 22px;
+      color: #d1fae5;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 16px 32px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #facc15;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+      background: #fde047;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .btn-secondary:hover {
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.2);
+    }
+
+    .features {
+      padding: 80px 8%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 35px;
+      border-radius: 24px;
+      backdrop-filter: blur(8px);
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #d1fae5;
+      line-height: 1.6;
+    }
+
+    .emoji {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .about {
+      padding: 80px 8%;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #d1fae5;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 40px 8%;
+      text-align: center;
+      background: rgba(0,0,0,0.3);
+      color: #bbf7d0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Kamo Bowling Club</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Roll In.<br>Relax.<br>Play Together.</h1>
+
+    <p>
+      A friendly community bowling club where everyone is welcome — from first-time players to experienced bowlers.
+    </p>
+
+    <div class="buttons">
+      <button class="btn btn-primary">Join The Club</button>
+      <button class="btn btn-secondary">View Events</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+
+    <div class="card">
+      <div class="emoji">🤝</div>
+      <h3>Friendly Community</h3>
+      <p>Meet great people, enjoy social games, and become part of a welcoming local club.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🏆</div>
+      <h3>Weekly Competitions</h3>
+      <p>Fun tournaments and regular matches for all skill levels throughout the season.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌿</div>
+      <h3>Club Facilities</h3>
+      <p>Enjoy quality greens, refreshments, events, and a relaxing clubhouse atmosphere.</p>
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Kamo Bowling Club</h2>
+
+    <p>
+      Kamo Bowling Club is a place where people of all ages can come together, enjoy lawn bowls, and build lasting friendships.
+      Whether you want competitive games or just a relaxing afternoon with friends, our club offers a welcoming environment for everyone.
+    </p>
+  </section>
+
+  <footer id="contact">
+    <h3>Kamo Bowling Club</h3>
+    <p>Email: info@kamobowlingclub.co.nz</p>
+    <p>Phone: (09) 123 4567</p>
+    <p>© 2026 Kamo Bowling Club. All rights reserved.</p>
+  </footer>
+
+</body>
